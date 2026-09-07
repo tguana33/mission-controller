@@ -1,0 +1,17 @@
+# Mission spec — one block per mission. Present plans and replans in this format.
+
+- title: ""                # verb-first, action-oriented
+  project: ""              # owning project
+  parent: null             # parent mission title, or null for root
+  prerequisites: []        # titles of missions that must complete before this starts
+  assignee: ""             # agent / team / person name from the roster
+  assignee_type: agent     # agent | team | person
+  start_date: YYYY-MM-DD
+  end_date: YYYY-MM-DD
+  tags: []                 # work stream, skill domain, priority
+  knowledge_base: []       # connected knowledge bases, if any
+  initial_status: planning # planning | waiting | in progress (roots/unblocked)
+  done_criterion: ""       # verifiable definition of done — drives the review gate
+  human_gate: false        # true = must pass awaiting review with user confirmation
+  deliverable: ""          # concrete output this mission produces
+  notes: ""                # assumptions, effort estimate, risks
